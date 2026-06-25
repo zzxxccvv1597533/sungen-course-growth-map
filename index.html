@@ -4,78 +4,75 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <title>嵩恩老師聲音課｜四週課程增長工作地圖</title>
+  <title>嵩恩老師聲音課｜按表招課資料需求與執行分工</title>
   <style>
     :root {
       --font-scale: 1;
       --spacing-scale: 1;
-      --bg: oklch(0.965 0.012 180);
-      --surface: oklch(0.99 0.006 185);
-      --surface-strong: oklch(0.93 0.035 178);
-      --surface-deep: oklch(0.25 0.055 180);
-      --ink: oklch(0.19 0.035 190);
-      --ink-soft: oklch(0.35 0.045 190);
-      --muted: oklch(0.55 0.035 190);
-      --rule: oklch(0.82 0.025 185);
-      --accent: oklch(0.66 0.15 32);
-      --accent-deep: oklch(0.46 0.13 32);
-      --green: oklch(0.48 0.11 162);
-      --green-soft: oklch(0.88 0.06 160);
-      --blue: oklch(0.45 0.09 230);
+      --bg: oklch(0.96 0.014 178);
+      --paper: oklch(0.985 0.007 182);
+      --paper-2: oklch(0.94 0.026 176);
+      --ink: oklch(0.18 0.035 188);
+      --ink-soft: oklch(0.34 0.043 188);
+      --muted: oklch(0.50 0.032 188);
+      --rule: oklch(0.80 0.024 184);
+      --deep: oklch(0.22 0.058 178);
+      --deep-2: oklch(0.17 0.047 184);
+      --deep-text: oklch(0.96 0.012 176);
+      --accent: oklch(0.67 0.155 35);
+      --accent-2: oklch(0.50 0.13 35);
+      --green: oklch(0.46 0.105 158);
+      --green-soft: oklch(0.88 0.064 155);
+      --blue: oklch(0.44 0.09 225);
       --violet: oklch(0.46 0.08 300);
-      --shadow: 0 24px 80px oklch(0.20 0.04 190 / 0.13);
-      --shadow-soft: 0 12px 36px oklch(0.20 0.04 190 / 0.08);
-      --radius-sm: 6px;
-      --radius-md: 10px;
-      --radius-lg: 14px;
-      --space-2xs: calc(4px * var(--spacing-scale));
-      --space-xs: calc(6px * var(--spacing-scale));
-      --space-sm: calc(8px * var(--spacing-scale));
-      --space-md: calc(12px * var(--spacing-scale));
-      --space-base: calc(16px * var(--spacing-scale));
-      --space-lg: calc(24px * var(--spacing-scale));
-      --space-xl: calc(32px * var(--spacing-scale));
-      --space-2xl: calc(48px * var(--spacing-scale));
-      --space-3xl: calc(64px * var(--spacing-scale));
-      --space-4xl: calc(96px * var(--spacing-scale));
+      --shadow-sm: 0 4px 8px oklch(0.18 0.04 188 / 0.08);
+      --shadow-md: 0 8px 14px oklch(0.18 0.04 188 / 0.10);
+      --radius: 8px;
+      --space-xs: calc(0.375rem * var(--spacing-scale));
+      --space-sm: calc(0.5rem * var(--spacing-scale));
+      --space-md: calc(0.75rem * var(--spacing-scale));
+      --space-base: calc(1rem * var(--spacing-scale));
+      --space-lg: calc(1.5rem * var(--spacing-scale));
+      --space-xl: calc(2rem * var(--spacing-scale));
+      --space-2xl: calc(3rem * var(--spacing-scale));
+      --space-3xl: calc(4rem * var(--spacing-scale));
       --font-body: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
       --font-display: "Songti TC", "Noto Serif TC", "PingFang TC", serif;
     }
 
     [data-theme="dark"] {
-      --bg: oklch(0.17 0.035 190);
-      --surface: oklch(0.23 0.04 190);
-      --surface-strong: oklch(0.29 0.055 180);
-      --surface-deep: oklch(0.12 0.03 190);
-      --ink: oklch(0.93 0.012 180);
-      --ink-soft: oklch(0.78 0.018 185);
-      --muted: oklch(0.68 0.02 185);
-      --rule: oklch(0.38 0.04 185);
+      --bg: oklch(0.16 0.035 188);
+      --paper: oklch(0.22 0.04 188);
+      --paper-2: oklch(0.27 0.046 184);
+      --ink: oklch(0.94 0.012 176);
+      --ink-soft: oklch(0.78 0.018 180);
+      --muted: oklch(0.66 0.018 180);
+      --rule: oklch(0.38 0.04 184);
+      --deep: oklch(0.12 0.032 188);
+      --deep-2: oklch(0.10 0.028 188);
+      --deep-text: oklch(0.96 0.012 176);
       --accent: oklch(0.72 0.14 38);
-      --accent-deep: oklch(0.80 0.12 42);
-      --green: oklch(0.70 0.11 162);
-      --green-soft: oklch(0.30 0.055 162);
-      --blue: oklch(0.70 0.08 230);
+      --accent-2: oklch(0.80 0.12 42);
+      --green: oklch(0.70 0.11 158);
+      --green-soft: oklch(0.31 0.06 158);
+      --blue: oklch(0.70 0.08 225);
       --violet: oklch(0.74 0.08 300);
-      --shadow: 0 24px 80px oklch(0.05 0.02 190 / 0.35);
-      --shadow-soft: 0 12px 36px oklch(0.05 0.02 190 / 0.22);
     }
 
     [data-theme="brand"] {
-      --bg: oklch(0.28 0.07 176);
-      --surface: oklch(0.96 0.016 170);
-      --surface-strong: oklch(0.82 0.09 156);
-      --surface-deep: oklch(0.20 0.055 180);
+      --bg: oklch(0.28 0.068 176);
+      --paper: oklch(0.96 0.016 170);
+      --paper-2: oklch(0.86 0.06 156);
       --ink: oklch(0.17 0.035 185);
-      --ink-soft: oklch(0.28 0.05 185);
-      --muted: oklch(0.44 0.04 185);
+      --ink-soft: oklch(0.30 0.045 185);
+      --muted: oklch(0.43 0.04 185);
       --rule: oklch(0.70 0.05 170);
+      --deep: oklch(0.19 0.055 180);
+      --deep-2: oklch(0.14 0.045 180);
       --accent: oklch(0.72 0.16 36);
-      --accent-deep: oklch(0.48 0.14 36);
+      --accent-2: oklch(0.48 0.14 36);
       --green: oklch(0.43 0.11 158);
       --green-soft: oklch(0.88 0.07 150);
-      --blue: oklch(0.42 0.09 225);
-      --violet: oklch(0.43 0.09 302);
     }
 
     * {
@@ -91,8 +88,7 @@
     body {
       margin: 0;
       background:
-        radial-gradient(circle at 12% 8%, oklch(0.87 0.08 160 / 0.65), transparent 36rem),
-        linear-gradient(135deg, var(--bg), oklch(0.95 0.016 210));
+        linear-gradient(135deg, color-mix(in oklch, var(--green-soft) 58%, var(--bg)), var(--bg) 38%, color-mix(in oklch, var(--paper-2) 58%, var(--bg)));
       color: var(--ink);
       font-family: var(--font-body);
       font-size: calc(1rem * var(--font-scale));
@@ -106,8 +102,8 @@
     }
 
     button,
-    input,
-    select {
+    select,
+    input {
       font: inherit;
     }
 
@@ -125,9 +121,9 @@
       justify-content: space-between;
       gap: var(--space-lg);
       padding: var(--space-md) clamp(1rem, 4vw, 3rem);
-      background: color-mix(in oklch, var(--surface) 82%, transparent);
+      background: color-mix(in oklch, var(--paper) 88%, transparent);
       border-bottom: 1px solid var(--rule);
-      backdrop-filter: blur(18px);
+      backdrop-filter: blur(16px);
     }
 
     .brand-mark {
@@ -135,20 +131,20 @@
       align-items: center;
       gap: var(--space-sm);
       min-width: 0;
-      font-weight: 800;
-      letter-spacing: 0;
+      color: var(--ink);
+      font-weight: 850;
     }
 
     .brand-mark::before {
       content: "";
+      flex: 0 0 auto;
       width: 36px;
       height: 36px;
       border-radius: 50%;
       background:
         linear-gradient(90deg, transparent 10%, var(--accent) 10% 18%, transparent 18% 30%, var(--green) 30% 38%, transparent 38% 50%, var(--blue) 50% 58%, transparent 58% 70%, var(--accent) 70% 78%, transparent 78%),
-        var(--surface-deep);
-      box-shadow: 0 8px 24px oklch(0.20 0.05 190 / 0.18);
-      flex: 0 0 auto;
+        var(--deep);
+      box-shadow: var(--shadow-sm);
     }
 
     .nav {
@@ -159,61 +155,44 @@
     }
 
     .nav a,
-    .download-button {
+    .print-button {
       min-height: 44px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       padding: 0 var(--space-md);
       border: 1px solid var(--rule);
-      border-radius: var(--radius-sm);
-      background: color-mix(in oklch, var(--surface) 72%, transparent);
+      border-radius: var(--radius);
+      background: color-mix(in oklch, var(--paper) 80%, transparent);
       color: var(--ink-soft);
       font-size: calc(0.875rem * var(--font-scale));
-      font-weight: 700;
+      font-weight: 750;
       text-decoration: none;
       cursor: pointer;
     }
 
     .nav a:hover,
-    .download-button:hover {
+    .print-button:hover {
       border-color: var(--accent);
       color: var(--ink);
     }
 
     .hero {
-      position: relative;
       display: grid;
-      grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.72fr);
-      gap: clamp(2rem, 7vw, 6rem);
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 0.72fr);
+      gap: clamp(2rem, 7vw, 5.5rem);
       align-items: center;
-      padding: clamp(4rem, 9vw, 8rem) clamp(1rem, 5vw, 5.5rem) clamp(3rem, 7vw, 6rem);
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      right: -12rem;
-      top: 10%;
-      width: 32rem;
-      height: 32rem;
-      border-radius: 50%;
-      background:
-        repeating-radial-gradient(circle, color-mix(in oklch, var(--accent) 32%, transparent) 0 2px, transparent 2px 16px);
-      opacity: 0.65;
-      pointer-events: none;
+      padding: calc(5.5rem * var(--spacing-scale)) clamp(1rem, 5vw, 5.5rem) calc(4rem * var(--spacing-scale));
     }
 
     .kicker {
       display: inline-flex;
-      width: fit-content;
       align-items: center;
       gap: var(--space-sm);
       margin-bottom: var(--space-lg);
-      color: var(--accent-deep);
-      font-weight: 900;
-      letter-spacing: 0.06em;
-      font-size: calc(0.76rem * var(--font-scale));
+      color: var(--accent-2);
+      font-size: calc(0.82rem * var(--font-scale));
+      font-weight: 850;
     }
 
     .kicker::before {
@@ -225,43 +204,55 @@
 
     h1,
     h2,
-    h3 {
+    h3,
+    h4 {
       margin: 0;
       color: var(--ink);
-      text-wrap: balance;
       letter-spacing: 0;
+      text-wrap: balance;
     }
 
     h1 {
-      max-width: 11ch;
+      max-width: 12ch;
       font-family: var(--font-display);
-      font-size: calc(clamp(3.2rem, 8vw, 6rem) * var(--font-scale));
-      line-height: 0.96;
-      font-weight: 800;
+      font-size: calc(4.6rem * var(--font-scale));
+      line-height: 0.98;
+      font-weight: 850;
     }
 
     h2 {
-      font-size: calc(clamp(2rem, 4vw, 3.4rem) * var(--font-scale));
-      line-height: 1.05;
+      max-width: 16ch;
+      font-size: calc(2.6rem * var(--font-scale));
+      line-height: 1.08;
       font-weight: 900;
-      max-width: 14ch;
     }
 
     h3 {
-      font-size: calc(clamp(1.15rem, 2vw, 1.55rem) * var(--font-scale));
+      font-size: calc(1.38rem * var(--font-scale));
       line-height: 1.25;
-      font-weight: 900;
+      font-weight: 850;
+    }
+
+    h4 {
+      font-size: calc(1rem * var(--font-scale));
+      line-height: 1.35;
+      font-weight: 850;
+    }
+
+    p {
+      margin: 0;
+      text-wrap: pretty;
     }
 
     .lead {
-      max-width: 63ch;
-      margin: var(--space-lg) 0 0;
+      max-width: 64ch;
+      margin-top: var(--space-lg);
       color: var(--ink-soft);
-      font-size: calc(1.2rem * var(--font-scale));
+      font-size: calc(1.17rem * var(--font-scale));
       line-height: 1.62;
     }
 
-    .hero-actions {
+    .hero-tags {
       display: flex;
       flex-wrap: wrap;
       gap: var(--space-sm);
@@ -272,24 +263,23 @@
       min-height: 40px;
       display: inline-flex;
       align-items: center;
-      border-radius: var(--radius-sm);
+      border-radius: var(--radius);
       padding: var(--space-sm) var(--space-md);
-      background: var(--surface);
+      background: var(--paper);
       border: 1px solid var(--rule);
       color: var(--ink-soft);
       font-size: calc(0.9rem * var(--font-scale));
-      font-weight: 700;
-      box-shadow: var(--shadow-soft);
+      font-weight: 750;
+      box-shadow: var(--shadow-sm);
     }
 
     .sound-panel {
       position: relative;
-      z-index: 2;
-      padding: clamp(1.2rem, 3vw, 2rem);
-      background: var(--surface-deep);
-      color: oklch(0.95 0.012 180);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow);
+      padding: var(--space-xl);
+      border-radius: var(--radius);
+      background: linear-gradient(140deg, var(--deep), var(--deep-2));
+      color: var(--deep-text);
+      box-shadow: var(--shadow-md);
       overflow: hidden;
     }
 
@@ -298,18 +288,14 @@
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(130deg, oklch(0.72 0.16 36 / 0.25), transparent 48%),
-        radial-gradient(circle at 90% 10%, oklch(0.72 0.11 160 / 0.35), transparent 18rem);
+        linear-gradient(125deg, oklch(0.72 0.16 36 / 0.23), transparent 44%),
+        linear-gradient(90deg, transparent, oklch(0.72 0.11 158 / 0.16));
       pointer-events: none;
     }
 
     .sound-panel > * {
       position: relative;
       z-index: 1;
-    }
-
-    .sound-panel h2 {
-      color: oklch(0.96 0.015 180);
     }
 
     .wave {
@@ -326,180 +312,191 @@
       height: var(--h);
       border-radius: 99px;
       background: color-mix(in oklch, var(--accent) 86%, oklch(0.95 0.03 180));
-      transform-origin: bottom;
-      opacity: 0.92;
+      opacity: 0.95;
     }
 
-    .ladder {
+    .sound-panel h2,
+    .sound-panel h3,
+    .sound-panel strong {
+      color: var(--deep-text);
+    }
+
+    .sound-panel p {
+      color: oklch(0.86 0.018 180);
+    }
+
+    .role-list {
       display: grid;
       gap: var(--space-md);
       margin-top: var(--space-lg);
     }
 
-    .ladder-step {
+    .role-row {
       display: grid;
-      grid-template-columns: 3.2rem 1fr;
+      grid-template-columns: 4.8rem 1fr;
       gap: var(--space-md);
       align-items: start;
       padding: var(--space-base);
       border: 1px solid oklch(0.95 0.02 180 / 0.18);
-      border-radius: var(--radius-md);
+      border-radius: var(--radius);
       background: oklch(0.95 0.02 180 / 0.08);
     }
 
-    .ladder-step strong {
-      display: block;
-      color: oklch(0.96 0.015 180);
-      font-size: calc(1rem * var(--font-scale));
-    }
-
-    .ladder-step p {
-      margin: var(--space-xs) 0 0;
-      color: oklch(0.87 0.018 180);
-      font-size: calc(0.9rem * var(--font-scale));
-    }
-
-    .step-price {
+    .role-row b {
+      color: oklch(0.16 0.035 34);
+      background: var(--accent);
+      border-radius: var(--radius);
+      min-height: 44px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 44px;
-      border-radius: var(--radius-sm);
-      background: var(--accent);
-      color: oklch(0.16 0.035 34);
-      font-weight: 900;
-      font-variant-numeric: tabular-nums;
+      font-size: calc(0.9rem * var(--font-scale));
+    }
+
+    .role-row p {
+      margin-top: var(--space-xs);
+      font-size: calc(0.92rem * var(--font-scale));
     }
 
     .section {
-      padding: clamp(3.5rem, 7vw, 7rem) clamp(1rem, 5vw, 5.5rem);
+      padding: calc(4.5rem * var(--spacing-scale)) clamp(1rem, 5vw, 5.5rem);
     }
 
     .section.band {
-      background: color-mix(in oklch, var(--surface) 70%, transparent);
+      background: color-mix(in oklch, var(--paper) 72%, transparent);
       border-block: 1px solid var(--rule);
     }
 
     .section-head {
       display: grid;
-      grid-template-columns: minmax(0, 0.72fr) minmax(280px, 0.72fr);
+      grid-template-columns: minmax(0, 0.8fr) minmax(280px, 0.8fr);
       gap: clamp(1.5rem, 5vw, 5rem);
       align-items: end;
       margin-bottom: var(--space-2xl);
     }
 
     .section-head p {
-      margin: 0;
-      max-width: 60ch;
+      max-width: 64ch;
       color: var(--ink-soft);
-      font-size: calc(1.04rem * var(--font-scale));
+      font-size: calc(1.03rem * var(--font-scale));
     }
 
-    .flow-grid {
-      display: grid;
-      grid-template-columns: repeat(5, minmax(180px, 1fr));
-      gap: var(--space-md);
-    }
-
-    .flow-item {
-      position: relative;
-      min-height: 250px;
-      padding: var(--space-lg);
-      border-radius: var(--radius-md);
-      background: var(--surface);
-      border: 1px solid var(--rule);
-      box-shadow: var(--shadow-soft);
-      overflow: hidden;
-    }
-
-    .flow-item::after {
-      content: "";
-      position: absolute;
-      left: var(--space-lg);
-      right: var(--space-lg);
-      bottom: var(--space-lg);
-      height: 7px;
-      border-radius: 99px;
-      background: var(--bar);
-    }
-
-    .flow-item small {
-      display: block;
-      margin-bottom: var(--space-md);
-      color: var(--muted);
-      font-size: calc(0.78rem * var(--font-scale));
-      font-weight: 900;
-      letter-spacing: 0.06em;
-    }
-
-    .flow-item p {
-      margin: var(--space-md) 0 var(--space-xl);
-      color: var(--ink-soft);
-      font-size: calc(0.95rem * var(--font-scale));
-    }
-
-    .work-grid {
+    .summary-grid,
+    .split-grid,
+    .deliverable-grid,
+    .metric-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: var(--space-lg);
     }
 
-    .work-card {
+    .panel,
+    .week-card,
+    .deliverable,
+    .metric {
       padding: var(--space-xl);
-      border-radius: var(--radius-md);
-      background: var(--surface);
+      border-radius: var(--radius);
+      background: var(--paper);
       border: 1px solid var(--rule);
-      box-shadow: var(--shadow-soft);
     }
 
-    .work-card .label {
-      display: inline-flex;
-      min-height: 32px;
-      align-items: center;
-      margin-bottom: var(--space-lg);
-      padding: 0 var(--space-sm);
-      border-radius: var(--radius-sm);
-      background: var(--green-soft);
-      color: var(--ink);
-      font-size: calc(0.78rem * var(--font-scale));
-      font-weight: 900;
+    .panel,
+    .deliverable,
+    .metric {
+      box-shadow: var(--shadow-sm);
     }
 
-    .work-card p,
-    .week-card p,
-    .deliverable p {
+    .panel.dark {
+      background: var(--deep);
+      color: var(--deep-text);
+      border-color: oklch(0.95 0.02 180 / 0.18);
+    }
+
+    .panel.dark h3,
+    .panel.dark h4,
+    .panel.dark strong {
+      color: var(--deep-text);
+    }
+
+    .panel.dark p,
+    .panel.dark li {
+      color: oklch(0.86 0.018 180);
+    }
+
+    .panel h3 + p,
+    .deliverable h3 + p,
+    .metric h3 + p {
+      margin-top: var(--space-md);
       color: var(--ink-soft);
     }
 
-    .work-card ul,
-    .deliverable ul,
-    .needs ul {
+    ul,
+    ol {
       margin: var(--space-lg) 0 0;
       padding: 0;
+    }
+
+    .clean-list {
       list-style: none;
       display: grid;
       gap: var(--space-sm);
     }
 
-    .work-card li,
-    .deliverable li,
-    .needs li {
+    .clean-list li {
       position: relative;
-      padding-left: 1.25rem;
+      padding-left: 1.3rem;
       color: var(--ink-soft);
     }
 
-    .work-card li::before,
-    .deliverable li::before,
-    .needs li::before {
+    .clean-list li::before {
       content: "";
       position: absolute;
       left: 0;
-      top: 0.75em;
+      top: 0.72em;
       width: 7px;
       height: 7px;
       border-radius: 50%;
       background: var(--accent);
+    }
+
+    .number-list {
+      counter-reset: item;
+      list-style: none;
+      display: grid;
+      gap: var(--space-md);
+    }
+
+    .number-list li {
+      counter-increment: item;
+      position: relative;
+      padding-left: 2.7rem;
+      color: var(--ink-soft);
+    }
+
+    .number-list li::before {
+      content: counter(item);
+      position: absolute;
+      left: 0;
+      top: -0.1rem;
+      width: 1.9rem;
+      height: 1.9rem;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--green-soft);
+      color: var(--ink);
+      font-weight: 850;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .protect {
+      margin-top: var(--space-lg);
+      padding: var(--space-lg);
+      border-radius: var(--radius);
+      background: color-mix(in oklch, var(--green-soft) 62%, var(--paper));
+      color: var(--ink-soft);
+      border: 1px solid color-mix(in oklch, var(--green) 28%, var(--rule));
     }
 
     .month {
@@ -509,21 +506,16 @@
 
     .week-card {
       display: grid;
-      grid-template-columns: 8rem minmax(0, 1fr) minmax(220px, 0.45fr);
+      grid-template-columns: 7rem minmax(0, 1fr) minmax(220px, 0.42fr);
       gap: var(--space-lg);
       align-items: start;
-      padding: var(--space-xl);
-      border-radius: var(--radius-lg);
-      background: var(--surface);
-      border: 1px solid var(--rule);
-      box-shadow: var(--shadow-soft);
     }
 
     .week-number {
       font-family: var(--font-display);
-      font-size: calc(2.8rem * var(--font-scale));
+      font-size: calc(2.6rem * var(--font-scale));
       line-height: 1;
-      font-weight: 800;
+      font-weight: 850;
       color: var(--tone);
     }
 
@@ -531,129 +523,332 @@
       color: var(--tone);
     }
 
-    .week-card .meta {
+    .week-card p {
+      margin-top: var(--space-md);
+      color: var(--ink-soft);
+    }
+
+    .week-meta {
       display: grid;
       gap: var(--space-sm);
       color: var(--ink-soft);
       font-size: calc(0.92rem * var(--font-scale));
     }
 
-    .meta span {
+    .week-meta span {
       display: block;
       padding-top: var(--space-sm);
       border-top: 1px solid var(--rule);
     }
 
-    .deliverables {
+    .path {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: var(--space-lg);
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: var(--space-sm);
     }
 
-    .deliverable {
-      padding: var(--space-xl);
-      border-radius: var(--radius-md);
-      background: var(--surface);
+    .path-step {
+      min-height: 142px;
+      padding: var(--space-lg);
+      border-radius: var(--radius);
+      background: var(--paper);
       border: 1px solid var(--rule);
-      box-shadow: var(--shadow-soft);
+    }
+
+    .path-step strong {
+      display: block;
+      color: var(--ink);
+      font-size: calc(1rem * var(--font-scale));
+    }
+
+    .path-step span {
+      display: block;
+      margin-top: var(--space-sm);
+      color: var(--ink-soft);
+      font-size: calc(0.92rem * var(--font-scale));
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border-radius: var(--radius);
+      border: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .mobile-data-cards {
+      display: none;
+    }
+
+    .data-card {
+      padding: var(--space-md) 0;
+      border-top: 1px solid var(--rule);
+    }
+
+    .data-card:first-child {
+      border-top: 0;
+    }
+
+    .data-card h4 {
+      color: var(--ink);
+      margin-bottom: var(--space-sm);
+    }
+
+    .data-kv {
+      display: grid;
+      gap: var(--space-xs);
+      color: var(--ink-soft);
+      font-size: calc(0.94rem * var(--font-scale));
+    }
+
+    .data-kv strong {
+      color: var(--accent-2);
+      font-weight: 850;
+    }
+
+    table {
+      width: 100%;
+      min-width: 760px;
+      border-collapse: collapse;
+      font-size: calc(0.95rem * var(--font-scale));
+    }
+
+    th,
+    td {
+      padding: var(--space-md) var(--space-base);
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    th {
+      color: var(--ink);
+      background: color-mix(in oklch, var(--green-soft) 58%, var(--paper));
+      font-weight: 850;
+    }
+
+    td {
+      color: var(--ink-soft);
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
     }
 
     .deliverable h3 {
       color: var(--tone);
     }
 
-    .schedule {
+    .detail-list {
+      columns: 2;
+      column-gap: var(--space-2xl);
+      margin-top: var(--space-xl);
+      padding-left: 1.25rem;
+      color: var(--ink-soft);
+    }
+
+    .detail-list li {
+      break-inside: avoid;
+      margin-bottom: var(--space-sm);
+      padding-left: var(--space-xs);
+    }
+
+    .rhythm {
       display: grid;
-      grid-template-columns: minmax(0, 0.72fr) minmax(320px, 1fr);
+      grid-template-columns: minmax(0, 0.76fr) minmax(300px, 1fr);
       gap: clamp(2rem, 6vw, 5rem);
       align-items: start;
     }
 
-    .days {
+    .time-list {
       display: grid;
       gap: var(--space-sm);
     }
 
-    .day-row {
+    .time-row {
       display: grid;
-      grid-template-columns: 5.5rem 1fr;
+      grid-template-columns: 8rem 1fr;
       gap: var(--space-md);
-      align-items: start;
       padding: var(--space-md) 0;
       border-bottom: 1px solid var(--rule);
     }
 
-    .day-row strong {
-      color: var(--accent-deep);
+    .time-row strong {
+      color: var(--accent-2);
       font-variant-numeric: tabular-nums;
     }
 
-    .day-row span {
+    .time-row span {
       color: var(--ink-soft);
-    }
-
-    .needs {
-      padding: var(--space-xl);
-      border-radius: var(--radius-lg);
-      background: var(--surface-deep);
-      color: oklch(0.95 0.012 180);
-      box-shadow: var(--shadow);
-    }
-
-    .needs h3 {
-      color: oklch(0.96 0.015 180);
-    }
-
-    .needs li,
-    .needs p {
-      color: oklch(0.86 0.018 180);
     }
 
     .closing {
       display: grid;
-      grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.5fr);
+      grid-template-columns: minmax(0, 1fr) minmax(260px, 0.42fr);
       gap: var(--space-xl);
       align-items: center;
-      padding: clamp(2rem, 5vw, 4rem);
-      border-radius: var(--radius-lg);
-      background: var(--surface-deep);
-      color: oklch(0.95 0.012 180);
-      box-shadow: var(--shadow);
+      padding: var(--space-2xl);
+      border-radius: var(--radius);
+      background: var(--deep);
+      color: var(--deep-text);
     }
 
-    .closing h2,
-    .closing p {
-      color: inherit;
+    .closing h2 {
+      color: var(--deep-text);
     }
 
     .closing p {
-      margin: var(--space-lg) 0 0;
-      max-width: 64ch;
+      max-width: 68ch;
+      margin-top: var(--space-lg);
       color: oklch(0.86 0.018 180);
     }
 
-    .decision {
-      display: grid;
-      gap: var(--space-sm);
+    .decision-box {
+      padding: var(--space-lg);
+      border-radius: var(--radius);
+      background: oklch(0.95 0.02 180 / 0.10);
+      border: 1px solid oklch(0.95 0.02 180 / 0.18);
     }
 
-    .decision span {
+    .decision-box strong {
       display: block;
-      padding: var(--space-md);
-      border-radius: var(--radius-sm);
-      background: oklch(0.95 0.02 180 / 0.08);
-      border: 1px solid oklch(0.95 0.02 180 / 0.16);
-      color: oklch(0.91 0.016 180);
+      color: var(--accent);
+      font-size: calc(1.1rem * var(--font-scale));
+    }
+
+    .decision-box span {
+      display: block;
+      margin-top: var(--space-sm);
+      color: oklch(0.86 0.018 180);
     }
 
     .footer {
-      padding: var(--space-xl) clamp(1rem, 5vw, 5.5rem) var(--space-2xl);
+      padding: var(--space-xl) clamp(1rem, 5vw, 5.5rem);
+      border-top: 1px solid var(--rule);
       color: var(--muted);
-      font-size: calc(0.86rem * var(--font-scale));
+      font-size: calc(0.88rem * var(--font-scale));
     }
 
-    .reveal {
-      opacity: 1;
+    .mobile-only {
+      display: none;
+    }
+
+    @media (max-width: 980px) {
+      .hero,
+      .section-head,
+      .rhythm,
+      .closing {
+        grid-template-columns: 1fr;
+      }
+
+      .week-card {
+        grid-template-columns: 1fr;
+      }
+
+      .week-number {
+        font-size: calc(2.2rem * var(--font-scale));
+      }
+
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 720px) {
+      h1 {
+        font-size: calc(3.1rem * var(--font-scale));
+      }
+
+      h2 {
+        font-size: calc(2rem * var(--font-scale));
+      }
+
+      .hero,
+      .section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      .sound-panel,
+      .panel,
+      .week-card,
+      .deliverable,
+      .metric,
+      .closing {
+        padding: var(--space-lg);
+      }
+
+      .role-row,
+      .time-row {
+        grid-template-columns: 1fr;
+      }
+
+      #division .table-wrap {
+        display: none;
+      }
+
+      .mobile-data-cards {
+        display: grid;
+        gap: var(--space-md);
+        margin-top: var(--space-lg);
+      }
+
+      .detail-list {
+        columns: 1;
+      }
+
+      .desktop-only {
+        display: none;
+      }
+
+      .mobile-only {
+        display: inline;
+      }
+    }
+
+    @media print {
+      :root {
+        --font-scale: 0.92;
+        --spacing-scale: 0.82;
+      }
+
+      html {
+        scroll-behavior: auto;
+      }
+
+      body {
+        background: oklch(0.99 0.002 180);
+      }
+
+      .topbar,
+      .tweaks-trigger,
+      .tweaks-panel {
+        display: none !important;
+      }
+
+      .hero,
+      .section {
+        padding-left: 0.6in;
+        padding-right: 0.6in;
+      }
+
+      .panel,
+      .week-card,
+      .deliverable,
+      .metric,
+      .path-step,
+      .table-wrap {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+
+      a {
+        text-decoration: none;
+      }
     }
 
     .tweaks-trigger {
@@ -661,46 +856,40 @@
       right: 20px;
       bottom: 20px;
       z-index: 99999;
-      width: 48px;
-      height: 48px;
+      display: none;
+      width: 44px;
+      height: 44px;
       border: 0;
       border-radius: 50%;
-      background: var(--surface-deep);
-      color: oklch(0.96 0.015 180);
-      font-weight: 900;
+      background: var(--deep);
+      color: var(--deep-text);
       cursor: pointer;
-      box-shadow: var(--shadow-soft);
-      transition: transform 180ms ease-out;
-    }
-
-    .tweaks-trigger:hover {
-      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
     }
 
     .tweaks-panel {
       position: fixed;
       right: 20px;
-      bottom: 82px;
+      bottom: 80px;
       z-index: 99998;
-      width: min(280px, calc(100vw - 40px));
-      display: none;
+      width: 260px;
       padding: 20px;
-      border-radius: var(--radius-lg);
-      background: var(--surface);
+      border-radius: var(--radius);
+      background: var(--paper);
       color: var(--ink);
       border: 1px solid var(--rule);
-      box-shadow: var(--shadow);
+      box-shadow: var(--shadow-md);
+      display: none;
       font-size: 1rem;
     }
 
     .tweaks-panel.open {
-      display: block;
+      display: none;
     }
 
     .tweaks-panel h4 {
       margin: 0 0 14px;
-      font-size: 1.5rem;
-      font-weight: 900;
+      font-size: 1rem;
     }
 
     .tweaks-group {
@@ -710,10 +899,8 @@
     .tweaks-group label {
       display: block;
       margin-bottom: 4px;
-      color: var(--muted);
       font-size: 0.75rem;
-      font-weight: 900;
-      letter-spacing: 0.06em;
+      font-weight: 750;
     }
 
     .tweaks-group select,
@@ -724,513 +911,528 @@
 
     .tweaks-group select,
     .tweaks-copy {
-      min-height: 44px;
+      min-height: 36px;
       border: 1px solid var(--rule);
-      border-radius: var(--radius-sm);
-      background: var(--bg);
+      border-radius: var(--radius);
+      background: transparent;
       color: var(--ink);
-    }
-
-    .tweaks-copy {
-      cursor: pointer;
-      font-weight: 800;
-    }
-
-    @media (max-width: 1100px) {
-      .hero,
-      .section-head,
-      .schedule,
-      .closing {
-        grid-template-columns: 1fr;
-      }
-
-      .flow-grid {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      }
-
-      .week-card {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 720px) {
-      .topbar {
-        position: static;
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      .nav {
-        justify-content: flex-start;
-      }
-
-      .hero {
-        padding-top: var(--space-3xl);
-      }
-
-      h1 {
-        max-width: 10ch;
-      }
-
-      .wave {
-        height: 84px;
-      }
-
-      .flow-item {
-        min-height: auto;
-      }
-
-      .day-row {
-        grid-template-columns: 1fr;
-        gap: var(--space-xs);
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      *,
-      *::before,
-      *::after {
-        scroll-behavior: auto !important;
-        animation-duration: 1ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 1ms !important;
-      }
-    }
-
-    @media print {
-      .topbar,
-      .footer,
-      .tweaks-trigger,
-      .tweaks-panel {
-        display: none !important;
-      }
-
-      body {
-        background: oklch(0.99 0.003 180);
-      }
-
-      .section,
-      .hero {
-        padding: 28px;
-      }
-
-      .hero,
-      .section-head,
-      .schedule,
-      .closing,
-      .week-card {
-        display: block;
-      }
-
-      h1 {
-        max-width: 12ch;
-        font-size: 4.7rem;
-      }
-
-      h2 {
-        max-width: 16ch;
-      }
-
-      .lead,
-      .section-head p {
-        max-width: 58ch;
-      }
-
-      .hero .sound-panel {
-        break-before: page;
-        page-break-before: always;
-        margin-top: 0;
-      }
-
-      .flow-grid,
-      .work-grid,
-      .deliverables,
-      .month,
-      .days,
-      .decision,
-      .ladder {
-        display: block;
-      }
-
-      .flow-item,
-      .work-card,
-      .week-card,
-      .deliverable,
-      .needs,
-      .closing,
-      .ladder-step,
-      .day-row {
-        break-inside: avoid;
-        page-break-inside: avoid;
-        margin-bottom: 16px;
-      }
-
-      .flow-item {
-        min-height: auto;
-      }
-
-      .flow-item::after {
-        bottom: 14px;
-      }
-
-      .week-number {
-        margin-bottom: 14px;
-      }
-
-      .meta {
-        margin-top: 18px;
-      }
-
-      .sound-panel,
-      .needs,
-      .closing {
-        box-shadow: none;
-      }
     }
   </style>
 </head>
 <body>
   <div class="page">
     <header class="topbar">
-      <div class="brand-mark">嵩恩老師聲音課｜四週課程增長工作地圖</div>
+      <div class="brand-mark">嵩恩老師聲音課｜按表招課資料需求與執行分工</div>
       <nav class="nav" aria-label="頁面導覽">
-        <a href="#flow">為什麼做</a>
-        <a href="#method">怎麼做</a>
-        <a href="#month">四週進度</a>
-        <a href="#deliverables">成果</a>
-        <a class="download-button" href="assets/sungen-growth-map.pdf">下載 PDF</a>
+        <a href="#summary">先看摘要</a>
+        <a href="#map">四週地圖</a>
+        <a href="#division">你們要準備什麼</a>
+        <a href="#deliverables">交付物</a>
+        <button class="print-button" type="button" onclick="window.print()">列印 / PDF</button>
       </nav>
     </header>
 
     <main>
       <section class="hero">
-        <div class="reveal">
-          <div class="kicker">合作啟動前的共識文件</div>
-          <h1>四週內對齊課程增長的問題與打法</h1>
-          <p class="lead">這份文件不是正式提案，因為合作已經確定。它的用途是先把接下來四週要解決的問題、我們會怎麼推進、最後會整理出哪些可用成果講清楚，讓嵩恩老師與團隊知道每週要對焦什麼。</p>
-          <div class="hero-actions" aria-label="本案核心原則">
-            <span class="tag">目標：前端行銷、課後營運、漏斗設計</span>
-            <span class="tag">第一週：完整知識萃取工作日</span>
-            <span class="tag">節奏：每週至少一次對焦會議</span>
+        <div>
+          <div class="kicker">合作啟動後的執行文件</div>
+          <h1>接下來四週，你們需要準備什麼</h1>
+          <p class="lead">這份文件先把老師與團隊最關心的事講清楚：第一週要先準備哪些資料、每週要做哪些決策、我們會負責哪些整理與設計，以及四週後如何讓低價工作坊、正課承接與課後營運跑起來。</p>
+          <div class="hero-tags" aria-label="本文件重點">
+            <span class="tag">不是正式提案，是執行共識</span>
+            <span class="tag">第一週先交五項資料</span>
+            <span class="tag">工作坊作為前端入口</span>
+            <span class="tag">正課與課後營運一起設計</span>
           </div>
         </div>
 
-        <aside class="sound-panel reveal" aria-label="課程增長轉換系統">
+        <aside class="sound-panel" aria-label="合作角色摘要">
           <div class="wave" aria-hidden="true">
-            <span style="--h: 28%; --i: 1"></span>
-            <span style="--h: 46%; --i: 2"></span>
-            <span style="--h: 64%; --i: 3"></span>
-            <span style="--h: 52%; --i: 4"></span>
-            <span style="--h: 78%; --i: 5"></span>
-            <span style="--h: 92%; --i: 6"></span>
-            <span style="--h: 58%; --i: 7"></span>
-            <span style="--h: 36%; --i: 8"></span>
-            <span style="--h: 70%; --i: 9"></span>
-            <span style="--h: 100%; --i: 10"></span>
-            <span style="--h: 74%; --i: 11"></span>
-            <span style="--h: 44%; --i: 12"></span>
-            <span style="--h: 62%; --i: 13"></span>
-            <span style="--h: 86%; --i: 14"></span>
-            <span style="--h: 50%; --i: 15"></span>
-            <span style="--h: 32%; --i: 16"></span>
-            <span style="--h: 56%; --i: 17"></span>
-            <span style="--h: 40%; --i: 18"></span>
-            <span style="--h: 24%; --i: 19"></span>
+            <span style="--h: 44px"></span><span style="--h: 64px"></span><span style="--h: 88px"></span><span style="--h: 72px"></span><span style="--h: 110px"></span>
+            <span style="--h: 120px"></span><span style="--h: 76px"></span><span style="--h: 52px"></span><span style="--h: 98px"></span><span style="--h: 128px"></span>
+            <span style="--h: 104px"></span><span style="--h: 62px"></span><span style="--h: 90px"></span><span style="--h: 116px"></span><span style="--h: 74px"></span>
+            <span style="--h: 48px"></span><span style="--h: 82px"></span><span style="--h: 60px"></span><span style="--h: 36px"></span>
           </div>
-          <h2>先重整轉換系統</h2>
-          <div class="ladder">
-            <div class="ladder-step">
-              <span class="step-price">前端</span>
+          <h2>你們不用先把所有答案準備好</h2>
+          <div class="role-list">
+            <div class="role-row">
+              <b>提供</b>
               <div>
-                <strong>課程前端行銷</strong>
-                <p>先讓潛在學員意識到自己的聲音問題，並知道為什麼值得先進入低門檻體驗。</p>
+                <strong>課程、案例、練習與學員問題</strong>
+                <p>把老師原本已有的專業與經驗交給我們整理。</p>
               </div>
             </div>
-            <div class="ladder-step">
-              <span class="step-price">漏斗</span>
+            <div class="role-row">
+              <b>決策</b>
               <div>
-                <strong>銷售漏斗與轉正課機制</strong>
-                <p>把工作坊、現場體驗、課後追蹤與正課銜接整理成一條可反覆運作的路徑。</p>
+                <strong>受眾、工作坊、正課承接方式</strong>
+                <p>每週確認關鍵取捨，不需要自己做完所有素材。</p>
               </div>
             </div>
-            <div class="ladder-step">
-              <span class="step-price">營運</span>
+            <div class="role-row">
+              <b>產出</b>
               <div>
-                <strong>課後營運與學員生態</strong>
-                <p>讓學員在課後持續練習、回饋、互相看見變化，並把成果回流成下一輪行銷素材。</p>
+                <strong>可招募、可上課、可轉換、可追蹤</strong>
+                <p>我們把原料整理成第一輪可以執行的招課流程。</p>
               </div>
             </div>
           </div>
         </aside>
       </section>
 
-      <section class="section band" id="flow">
+      <section class="section band" id="summary">
         <div class="section-head">
-          <h2>為什麼要做這些</h2>
-          <p>嵩恩老師過去已經有開正課的經驗，但接下來如果要取得更好的課程成績，不能只調課綱。前端行銷、現場轉換、課後營運與學員生態需要一起重新對齊。</p>
+          <h2>先看這裡</h2>
+          <p>老師與團隊最需要先知道的是：這不是把課程變成硬銷，也不是把一堆作業丟回給老師。你們負責給原料與做決策，我們負責整理成可執行版本。</p>
         </div>
 
-        <div class="flow-grid">
-          <article class="flow-item reveal" style="--bar: var(--green)">
-            <small>原因 1</small>
-            <h3>正課經驗要變成可複製模型</h3>
-            <p>過去能開正課，代表老師有內容與教學能力；下一步要把這些經驗整理成可反覆招生、可交付、可優化的流程。</p>
+        <div class="summary-grid">
+          <article class="panel">
+            <h3>你們主要負責三件事</h3>
+            <ol class="number-list">
+              <li>提供原料：過去課程、案例、練習、學員問題與老師判斷經驗。</li>
+              <li>做關鍵決策：確認這一輪要先打哪一群學員、開什麼工作坊、如何承接正課。</li>
+              <li>每週配合確認：固定回覆資料、參與會議、審核我們整理出的方向與素材。</li>
+            </ol>
           </article>
-          <article class="flow-item reveal" style="--bar: var(--accent)">
-            <small>原因 2</small>
-            <h3>前端行銷還需要更清楚</h3>
-            <p>不是所有人一開始都會理解「聲音課」的價值。前端需要先讓學員看見自己的問題，再願意進入低門檻體驗。</p>
-          </article>
-          <article class="flow-item reveal" style="--bar: var(--blue)">
-            <small>原因 3</small>
-            <h3>正課結構可能需要大幅調整</h3>
-            <p>如果前端工作坊、學員痛點與正課承諾改變，正課的模組順序、練習設計與課後作業也要跟著重排。</p>
-          </article>
-          <article class="flow-item reveal" style="--bar: var(--violet)">
-            <small>原因 4</small>
-            <h3>課後需要形成營運節奏</h3>
-            <p>聲音訓練不是上完就結束。課後如果沒有練習、回饋與追蹤，學員感受很容易停在當下，難以形成成果。</p>
-          </article>
-          <article class="flow-item reveal" style="--bar: var(--accent-deep)">
-            <small>原因 5</small>
-            <h3>漏斗要讓成果回到招生</h3>
-            <p>學員的練習、回饋、前後差異與社群互動，未來都應該回流成下一輪前端行銷與銷售判斷的素材。</p>
-          </article>
-        </div>
-      </section>
 
-      <section class="section" id="method">
-        <div class="section-head">
-          <h2>我們會怎麼做</h2>
-          <p>四週內先不追求把所有東西做完，而是先把增長系統的骨架對齊。做法會從老師知識萃取開始，再依序處理前端行銷、銷售漏斗、課後營運與學員生態。</p>
-        </div>
-
-        <div class="work-grid">
-          <article class="work-card reveal">
-            <span class="label">知識萃取</span>
-            <h3>先把老師腦中的方法抓出來</h3>
-            <p>第一週需要一個完整工作日，至少保留一整個下午到晚上。丁丁會帶一到兩位朋友一起到場，協助萃取老師的課程內容、案例、練習與判斷標準。</p>
-            <ul>
-              <li>盤點過去正課怎麼教、學員卡在哪裡</li>
-              <li>整理老師常用的聲音練習與回饋語言</li>
-              <li>拆出哪些內容適合前端，哪些應該放在正課</li>
+          <article class="panel">
+            <h3>第一週先準備五項</h3>
+            <ul class="clean-list">
+              <li>過去正課的大綱、簡報或講義。</li>
+              <li>5 個有代表性的學員案例。</li>
+              <li>5 個最常使用的聲音練習。</li>
+              <li>學員最常問的問題、抗拒或誤解。</li>
+              <li>第一輪工作坊可能的日期、地點、人數與協作人員。</li>
             </ul>
           </article>
 
-          <article class="work-card reveal">
-            <span class="label">前端行銷</span>
-            <h3>把聲音課改成學員看得懂的入口</h3>
-            <p>前端不再只介紹「找到自己的聲音」，而是要讓人意識到自己遇到的聲音問題，並知道低價工作坊能讓他先看見差異。</p>
-            <ul>
-              <li>改寫報名表單與活動頁文案，不做官網</li>
-              <li>設計 300 到 500 元工作坊的主訴求</li>
-              <li>測試職場表達、長時間說話、教學帶領等切角</li>
+          <article class="panel">
+            <h3>會前資料包怎麼交</h3>
+            <ul class="clean-list">
+              <li>格式不限：Google Drive、PDF、簡報、截圖、錄音筆記都可以。</li>
+              <li>會議前 24 小時先給丁丁或指定窗口，不需要整理成完美版本。</li>
+              <li>案例可以先匿名，姓名、公司、錄音與見證授權之後再確認。</li>
+              <li>不確定能不能用的素材先放進來，我們會協助判斷放前端、正課或暫不使用。</li>
             </ul>
           </article>
 
-          <article class="work-card reveal">
-            <span class="label">銷售漏斗</span>
-            <h3>把工作坊變成正課前的轉換機制</h3>
-            <p>低價工作坊不是縮小版正課，而是漏斗入口。現場要讓學員有感，課後要有追蹤，最後才有機會自然銜接到正課。</p>
-            <ul>
-              <li>設計工作坊開場、練習、回饋與 CTA</li>
-              <li>建立課後 24 小時、3 天、7 天追蹤節奏</li>
-              <li>整理學員疑慮與轉正課判斷條件</li>
-            </ul>
+          <article class="panel dark">
+            <h3>老師的課程主體會被保留</h3>
+            <p>這次不會把嵩恩老師原本的課程整個推翻，而是先整理出哪些內容應保留，哪些適合前移到工作坊，哪些應留在正課或課後陪跑。核心仍以老師的教學判斷、聲音方法與現場回饋語言為主。</p>
           </article>
 
-          <article class="work-card reveal">
-            <span class="label">課後營運</span>
-            <h3>讓學員在內部形成生態系</h3>
-            <p>正課結束後不能只靠學員自己練。要把練習、回饋、互相看見與案例沉澱設計成固定節奏，讓成果回到社群與下一輪招生。</p>
-            <ul>
-              <li>設計作業上傳、共通問題回覆與案例整理</li>
-              <li>建立學員互相聽見變化的社群機制</li>
-              <li>把優秀案例變成下一輪行銷素材</li>
+          <article class="panel">
+            <h3>你們不需要做的事</h3>
+            <ul class="clean-list">
+              <li>不需要自己把完整文案、活動頁或工作坊流程全部寫完。</li>
+              <li>不需要為了第一輪先做官網。</li>
+              <li>不需要把所有學員問題都變成老師私訊回覆。</li>
+              <li>不需要一次把正課改到完美，第一輪先跑通路徑。</li>
             </ul>
           </article>
         </div>
       </section>
 
-      <section class="section band" id="month">
+      <section class="section" id="map">
         <div class="section-head">
-          <h2>四週執行節奏</h2>
-          <p>每週至少一次對焦會議，討論時間以週五晚上或週五、週六區段為主。第一週需要一個完整工作日，重點是把老師知識萃取出來，後面三週再依序進入行銷、漏斗與營運設計。</p>
+          <h2>四週地圖</h2>
+          <p>這次會把「化書成課」的九階段流程壓縮成四週執行節奏。原本的「書」，在這個專案中改成嵩恩老師腦中的聲音方法、教學案例、練習設計與現場回饋語言。</p>
         </div>
 
         <div class="month">
-          <article class="week-card reveal" style="--tone: var(--green)">
+          <article class="week-card" style="--tone: var(--green)">
             <div class="week-number">W1</div>
             <div>
-              <h3>對齊問題與知識萃取</h3>
-              <p>安排一個完整工作日，至少保留一整個下午到晚上。丁丁會把時間空出來，並帶一到兩位朋友一起到場，協助把老師的正課經驗、案例、練習與學員痛點萃取出來。</p>
+              <h3>知識萃取與問題對焦</h3>
+              <p>集中訪談老師，拆出課程主線、學員痛點、常用練習、判斷標準、案例與內容篩選。</p>
             </div>
-            <div class="meta">
-              <span><strong>對焦：</strong>現在正課怎麼運作、學員為什麼來、哪裡需要大改</span>
-              <span><strong>產出：</strong>老師知識地圖、課程問題清單、第一版增長假設</span>
+            <div class="week-meta">
+              <span>重點：完整下午到晚上</span>
+              <span>產出：知識地圖、痛點地圖、內容篩選清單</span>
             </div>
           </article>
 
-          <article class="week-card reveal" style="--tone: var(--accent-deep)">
+          <article class="week-card" style="--tone: var(--accent-2)">
             <div class="week-number">W2</div>
             <div>
-              <h3>前端行銷與工作坊入口</h3>
-              <p>把「聲音課」改成學員容易理解的入口，設計 300 到 500 元低價工作坊的主訴求、報名表單、活動頁文案與第一輪測試切角。</p>
+              <h3>前端切角與低價工作坊</h3>
+              <p>把老師專業翻成學員看得懂、願意報名的前端入口，短期用報名表、活動頁、社群與私訊承接。</p>
             </div>
-            <div class="meta">
-              <span><strong>對焦：</strong>陌生學員為什麼願意先來、哪個痛點最適合先測</span>
-              <span><strong>產出：</strong>前端行銷訊息、低價工作坊定位、報名表單與活動頁 brief</span>
+            <div class="week-meta">
+              <span>重點：3 小時或半天工作坊</span>
+              <span>產出：主題定位、報名表欄位、招募文案</span>
             </div>
           </article>
 
-          <article class="week-card reveal" style="--tone: var(--blue)">
+          <article class="week-card" style="--tone: var(--blue)">
             <div class="week-number">W3</div>
             <div>
-              <h3>銷售漏斗與課後營運</h3>
-              <p>整理工作坊現場如何創造體驗、如何轉正課、課後如何追蹤，以及正課結束後怎麼讓學員練習、回饋、互相看見。</p>
+              <h3>轉換系統與課後營運</h3>
+              <p>讓工作坊不是一次體驗課，而是正課與學員生態系入口，設計現場練習、正課邀請說法與會後追蹤。</p>
             </div>
-            <div class="meta">
-              <span><strong>對焦：</strong>工作坊不是結束點，而是銷售漏斗與學員生態的入口</span>
-              <span><strong>產出：</strong>工作坊流程、現場 CTA、課後追蹤節奏、社群營運雛形</span>
+            <div class="week-meta">
+              <span>重點：不是硬銷，是自然承接</span>
+              <span>產出：Rundown、正課邀請說法、24 小時 / 3 天 / 7 天追蹤</span>
             </div>
           </article>
 
-          <article class="week-card reveal" style="--tone: var(--violet)">
+          <article class="week-card" style="--tone: var(--violet)">
             <div class="week-number">W4</div>
             <div>
-              <h3>整合、拍板與下一輪執行</h3>
-              <p>把前三週的判斷整合成一套可以執行的工作地圖，確認哪些內容先做、哪些延後、誰負責，以及下一場工作坊或正課前要準備什麼。</p>
+              <h3>整合決策與落地排程</h3>
+              <p>把前三週內容整合成第一輪可以上線、可以招募、可以追蹤、可以回收數據的版本。</p>
             </div>
-            <div class="meta">
-              <span><strong>對焦：</strong>先達成共識，再進入細部製作與執行</span>
-              <span><strong>產出：</strong>四週結論版、執行分工、下一輪課程增長任務清單</span>
+            <div class="week-meta">
+              <span>重點：決策定版與負責人表</span>
+              <span>產出：單一真相表（唯一版本的決策表）、招課排程、下一輪優化清單</span>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="section" id="deliverables">
+      <section class="section band" id="path">
         <div class="section-head">
-          <h2>最後你們會得到什麼</h2>
-          <p>四週後要得到的不是一份漂亮簡報，而是一組可以拿來開會、分工、製作素材與安排下一輪課程的共識成果。</p>
+          <h2>專案如何落地</h2>
+          <p>最後不是只交一份企劃書，而是完成一條可以被執行的招課路徑。第一輪先把「招募、工作坊、轉換、追蹤」跑通，再用真實數據優化下一輪。</p>
         </div>
 
-        <div class="deliverables">
-          <article class="deliverable reveal" style="--tone: var(--green)">
-            <h3>課程問題地圖</h3>
-            <ul>
-              <li>老師知識與案例整理</li>
-              <li>過去正課經驗盤點</li>
-              <li>目前前端行銷、課程結構、課後營運缺口</li>
-              <li>需要先解決與可以延後處理的問題分層</li>
-            </ul>
+        <div class="path">
+          <div class="path-step"><strong>前端曝光</strong><span>社群、轉介紹、合作曝光，讓對的人知道自己有這個問題。</span></div>
+          <div class="path-step"><strong>報名承接</strong><span>用報名表或活動頁收集名單、痛點與使用情境。</span></div>
+          <div class="path-step"><strong>低價工作坊</strong><span>讓學員現場看見問題，感受到一次具體練習的差異。</span></div>
+          <div class="path-step"><strong>正課邀請</strong><span>把工作坊中看見的問題，接到正課的陪跑、練習與回饋。</span></div>
+          <div class="path-step"><strong>會後追蹤</strong><span>用 24 小時、3 天、7 天節奏延續現場感受與行動。</span></div>
+          <div class="path-step"><strong>生態系累積</strong><span>透過社群練習、案例收集與回饋，形成下一輪素材。</span></div>
+        </div>
+
+        <p class="protect">低價工作坊不是正課縮水版，也不是要拉低老師價值。它是前端體驗入口，讓學員先看見自己的聲音問題，再理解正課能提供更完整的陪跑、回饋與整合。</p>
+      </section>
+
+      <section class="section" id="division">
+        <div class="section-head">
+          <h2>你們要準備什麼</h2>
+          <p>老師與團隊提供原料、做決策、確認節奏；我們負責萃取、重構、設計、整理與落地管理。</p>
+        </div>
+
+        <div class="split-grid">
+          <article class="panel">
+            <h3>嵩恩老師與團隊應提供</h3>
+            <div class="table-wrap" style="margin-top: var(--space-lg)">
+              <table>
+                <thead>
+                  <tr>
+                    <th>類別</th>
+                    <th>需要提供什麼</th>
+                    <th>會被用來做什麼</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>過去課程資料</td>
+                    <td>正課大綱、簡報、講義、作業、工作坊流程</td>
+                    <td>重構課程主線，判斷哪些內容放前端、哪些留正課</td>
+                  </tr>
+                  <tr>
+                    <td>教學方法</td>
+                    <td>常用練習、暖身、示範、回饋方式、判斷標準</td>
+                    <td>建立聲音教學知識地圖與工作坊練習設計</td>
+                  </tr>
+                  <tr>
+                    <td>學員資料</td>
+                    <td>報名原因、課後回饋、常見問題、常見抗拒</td>
+                    <td>建立學員痛點地圖與前端切角</td>
+                  </tr>
+                  <tr>
+                    <td>真實案例</td>
+                    <td>成功案例、卡住案例、企業課案例、一對一案例</td>
+                    <td>寫活動頁、設計現場案例、建立見證素材</td>
+                  </tr>
+                  <tr>
+                    <td>商業設定</td>
+                    <td>工作坊價格、正課價格、名額、時間、地點、收款方式</td>
+                    <td>建立第一輪招課排程與報名承接</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="mobile-data-cards" aria-label="嵩恩老師與團隊應提供資料">
+              <article class="data-card">
+                <h4>過去課程資料</h4>
+                <div class="data-kv">
+                  <span><strong>請提供：</strong>正課大綱、簡報、講義、作業、工作坊流程。</span>
+                  <span><strong>用途：</strong>重構課程主線，判斷哪些內容放前端、哪些留正課。</span>
+                </div>
+              </article>
+              <article class="data-card">
+                <h4>教學方法</h4>
+                <div class="data-kv">
+                  <span><strong>請提供：</strong>常用練習、暖身、示範、回饋方式、判斷標準。</span>
+                  <span><strong>用途：</strong>建立聲音教學知識地圖與工作坊練習設計。</span>
+                </div>
+              </article>
+              <article class="data-card">
+                <h4>學員資料</h4>
+                <div class="data-kv">
+                  <span><strong>請提供：</strong>報名原因、課後回饋、常見問題、常見抗拒。</span>
+                  <span><strong>用途：</strong>建立學員痛點地圖與前端切角。</span>
+                </div>
+              </article>
+              <article class="data-card">
+                <h4>真實案例</h4>
+                <div class="data-kv">
+                  <span><strong>請提供：</strong>成功案例、卡住案例、企業課案例、一對一案例。</span>
+                  <span><strong>用途：</strong>寫活動頁、設計現場案例、建立見證素材。</span>
+                </div>
+              </article>
+              <article class="data-card">
+                <h4>商業設定</h4>
+                <div class="data-kv">
+                  <span><strong>請提供：</strong>工作坊價格、正課價格、名額、時間、地點、收款方式。</span>
+                  <span><strong>用途：</strong>建立第一輪招課排程與報名承接。</span>
+                </div>
+              </article>
+            </div>
           </article>
 
-          <article class="deliverable reveal" style="--tone: var(--accent-deep)">
-            <h3>前端行銷打法</h3>
-            <ul>
-              <li>低價工作坊主訴求</li>
-              <li>第一輪可測試切角</li>
-              <li>活動頁與報名表單文案方向</li>
-              <li>工作坊現場要讓學員感受到的差異</li>
-            </ul>
+          <article class="panel">
+            <h3>我們負責執行</h3>
+            <div class="table-wrap" style="margin-top: var(--space-lg)">
+              <table>
+                <thead>
+                  <tr>
+                    <th>工作項目</th>
+                    <th>我們會做什麼</th>
+                    <th>產出</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>知識萃取</td>
+                    <td>訪談老師，整理教學經驗、案例、練習與判斷標準</td>
+                    <td>聲音課知識地圖、練習與案例資料庫</td>
+                  </tr>
+                  <tr>
+                    <td>前端定位</td>
+                    <td>把老師專業翻成學員看得懂、願意報名的切角</td>
+                    <td>受眾地圖、切角表、活動主題</td>
+                  </tr>
+                  <tr>
+                    <td>工作坊設計</td>
+                    <td>規劃 3 小時或半天工作坊流程與現場輸出物</td>
+                    <td>Rundown、練習卡、聲音使用說明書 v1</td>
+                  </tr>
+                  <tr>
+                    <td>轉換設計</td>
+                    <td>設計工作坊後如何自然承接正課</td>
+                    <td>正課邀請說法（CTA）、FAQ、正課分流方式</td>
+                  </tr>
+                  <tr>
+                    <td>落地管理</td>
+                    <td>建立單一真相表、負責人表、排程與完成檢核</td>
+                    <td>四週任務表、第一輪招課排程、下一輪優化清單</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="mobile-data-cards" aria-label="我們負責執行內容">
+              <article class="data-card">
+                <h4>知識萃取</h4>
+                <div class="data-kv">
+                  <span><strong>我們會做：</strong>訪談老師，整理教學經驗、案例、練習與判斷標準。</span>
+                  <span><strong>產出：</strong>聲音課知識地圖、練習與案例資料庫。</span>
+                </div>
+              </article>
+              <article class="data-card">
+                <h4>前端定位</h4>
+                <div class="data-kv">
+                  <span><strong>我們會做：</strong>把老師專業翻成學員看得懂、願意報名的切角。</span>
+                  <span><strong>產出：</strong>受眾地圖、切角表、活動主題。</span>
+                </div>
+              </article>
+              <article class="data-card">
+                <h4>工作坊設計</h4>
+                <div class="data-kv">
+                  <span><strong>我們會做：</strong>規劃 3 小時或半天工作坊流程與現場輸出物。</span>
+                  <span><strong>產出：</strong>Rundown、練習卡、聲音使用說明書 v1。</span>
+                </div>
+              </article>
+              <article class="data-card">
+                <h4>轉換設計</h4>
+                <div class="data-kv">
+                  <span><strong>我們會做：</strong>設計工作坊後如何自然承接正課。</span>
+                  <span><strong>產出：</strong>正課邀請說法（CTA）、FAQ、正課分流方式。</span>
+                </div>
+              </article>
+              <article class="data-card">
+                <h4>落地管理</h4>
+                <div class="data-kv">
+                  <span><strong>我們會做：</strong>建立單一真相表（唯一版本的決策表）、負責人表與排程。</span>
+                  <span><strong>產出：</strong>四週任務表、第一輪招課排程、下一輪優化清單。</span>
+                </div>
+              </article>
+            </div>
           </article>
+        </div>
+      </section>
 
-          <article class="deliverable reveal" style="--tone: var(--blue)">
-            <h3>漏斗與營運設計</h3>
-            <ul>
-              <li>工作坊到正課的銷售漏斗</li>
-              <li>課後 24 小時、3 天、7 天追蹤節奏</li>
-              <li>正課後學員練習與回饋機制</li>
-              <li>學員生態系的第一版營運方式</li>
-            </ul>
-          </article>
+      <section class="section band" id="deliverables">
+        <div class="section-head">
+          <h2>最後會拿到什麼</h2>
+          <p>交付物可以拆成四組成果。細項很多，但目的只有一個：讓第一輪課程招募與承接能按表推進，而不是每次從零開始。</p>
+        </div>
 
-          <article class="deliverable reveal" style="--tone: var(--violet)">
-            <h3>下一步執行清單</h3>
-            <ul>
-              <li>四週後拍板版本</li>
-              <li>誰負責製作哪些素材</li>
-              <li>下一場工作坊前要完成的事項</li>
-              <li>後續正課調整與營運優先順序</li>
-            </ul>
+        <div class="deliverable-grid">
+          <article class="deliverable" style="--tone: var(--green)">
+            <h3>課程與工作坊定位</h3>
+            <p>釐清老師的聲音方法、學員痛點、工作坊與正課各自要承接的任務。</p>
           </article>
+          <article class="deliverable" style="--tone: var(--accent-2)">
+            <h3>低價工作坊招募材料</h3>
+            <p>完成主題、活動頁/表單架構、報名欄位、社群招募文案與私訊回覆方向。</p>
+          </article>
+          <article class="deliverable" style="--tone: var(--blue)">
+            <h3>工作坊到正課的轉換流程</h3>
+            <p>完成 Rundown、練習卡、正課邀請說法、FAQ，以及 24 小時 / 3 天 / 7 天會後追蹤。</p>
+          </article>
+          <article class="deliverable" style="--tone: var(--violet)">
+            <h3>營運與下一輪優化表</h3>
+            <p>完成課後社群節奏、案例收集、單一真相表、雙方負責人表與招課排程。</p>
+          </article>
+        </div>
+
+        <ol class="detail-list">
+          <li>嵩恩老師聲音教學知識地圖</li>
+          <li>學員痛點與使用情境地圖</li>
+          <li>聲音練習與判斷標準資料庫 v1</li>
+          <li>工作坊可用內容 / 正課保留內容 / 暫不使用內容清單</li>
+          <li>低價工作坊定位與主題建議</li>
+          <li>前端受眾與切角表</li>
+          <li>報名表欄位與活動頁 / 表單架構</li>
+          <li>第一輪社群招募文案草稿</li>
+          <li>工作坊 Rundown</li>
+          <li>現場練習卡與個人輸出物設計</li>
+          <li>正課邀請說法（CTA）與 FAQ 草稿</li>
+          <li>24 小時 / 3 天 / 7 天會後追蹤訊息</li>
+          <li>課後營運與社群節奏草案</li>
+          <li>專案單一真相表</li>
+          <li>雙方負責人與四週任務表</li>
+          <li>第一輪招課排程</li>
+          <li>下一輪優化檢核表</li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <div class="rhythm">
+          <div>
+            <h2>會議與投入節奏</h2>
+            <p class="lead">第 1 週需要安排一個完整下午到晚上做集中萃取；第 2 到第 4 週每週至少一次 60 到 90 分鐘會議，另保留 30 到 60 分鐘做資料回覆與素材確認。</p>
+            <p class="protect">課後營運不會設計成老師無限私訊客服。這一輪會優先採用群體回饋、固定節奏與有限互動，先界定哪些問題用共通回覆，哪些內容進社群練習，哪些情況才需要老師個別回覆。</p>
+          </div>
+
+          <div class="panel">
+            <h3>每週工作節奏</h3>
+            <div class="time-list" style="margin-top: var(--space-lg)">
+              <div class="time-row"><strong>會前 24 小時</strong><span>嵩恩老師與團隊提供當週需要的資料或回覆。</span></div>
+              <div class="time-row"><strong>每週固定會議</strong><span>討論關鍵判斷、決策取捨、確認下一週任務。</span></div>
+              <div class="time-row"><strong>會後 24 小時</strong><span>我們整理更新文件、任務表與下一步需求。</span></div>
+              <div class="time-row"><strong>第一週長會</strong><span>安排完整下午到晚上，集中訪談與整理老師知識。</span></div>
+              <div class="time-row"><strong>需要長會時</strong><span>優先安排週五或週六，讓決策與現場工作可以連在一起。</span></div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="section band">
-        <div class="schedule">
-          <div>
-            <h2>會議與實作節奏</h2>
-            <p class="lead">週五晚上，以及週五、週六的時間，會用來做對焦會議與工作討論，不是指開課時段。四週內每週至少一次主會議；第一週另外安排一個完整工作日，把老師知識先萃取出來。</p>
-            <div class="needs">
-              <h3>嵩恩老師需要提供</h3>
-              <ul>
-                <li>過去正課課綱、簡報、教材與作業</li>
-                <li>過往學員回饋、報名原因、常見疑慮</li>
-                <li>企業課、個人課、工作坊的實際經驗</li>
-                <li>最常用的聲音練習、示範與現場回饋方式</li>
-                <li>接下來四週可投入的時間與合作邊界</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="days">
-            <div class="day-row">
-              <strong>W1</strong>
-              <span>安排一個完整工作日，最好保留下午到晚上。丁丁帶一到兩位朋友到場，集中萃取老師知識、過去正課經驗、學員痛點與目前營運缺口。</span>
-            </div>
-            <div class="day-row">
-              <strong>W1 會後</strong>
-              <span>整理成第一版問題地圖：哪些是前端行銷問題，哪些是課程結構問題，哪些是課後營運問題。</span>
-            </div>
-            <div class="day-row">
-              <strong>W2</strong>
-              <span>每週一次主會議，對齊前端行銷：低價工作坊主訴求、報名表單、活動頁文案、第一輪切角。</span>
-            </div>
-            <div class="day-row">
-              <strong>W3</strong>
-              <span>對齊銷售漏斗與課後追蹤：工作坊現場 CTA、課後訊息節奏、正課轉換條件、學員回饋收集方式。</span>
-            </div>
-            <div class="day-row">
-              <strong>W4</strong>
-              <span>整合拍板：確認下一步要先製作哪些素材、誰負責執行、下一場工作坊或正課前要完成什麼。</span>
-            </div>
-            <div class="day-row">
-              <strong>固定節奏</strong>
-              <span>每次主會議前 24 小時，先交本週素材或問題；會議中只做判斷與取捨，不在會議裡臨時整理所有資料。</span>
-            </div>
-            <div class="day-row">
-              <strong>執行方式</strong>
-              <span>丁丁負責選材、內化、結構判斷與策略對焦；團隊協助整理文件、流程、表單、追蹤節奏與後續執行清單。</span>
-            </div>
-            <div class="day-row">
-              <strong>共識目標</strong>
-              <span>四週結束時，不是每個素材都完全做完，而是先把要解決的問題、做法、交付物與下一步分工對齊。</span>
-            </div>
-          </div>
+        <div class="section-head">
+          <h2>第一輪成功標準</h2>
+          <p>第一輪先用來觀察與修正，不以一次結果定生死；除了看有沒有賣出去，也要看整條招募與承接路徑有沒有跑通。</p>
+        </div>
+        <div class="metric-grid">
+          <article class="metric"><h3>前端招募</h3><p>多少人看到、點擊、報名，報名者的痛點是否符合我們想找的人。</p></article>
+          <article class="metric"><h3>現場感受</h3><p>學員是否在工作坊中有具體覺察或小幅改變，並願意留下後續需求。</p></article>
+          <article class="metric"><h3>會後回應</h3><p>24 小時、3 天、7 天追蹤的回覆率與作業完成率。</p></article>
+          <article class="metric"><h3>素材累積</h3><p>是否取得下一輪可使用的問題、回饋、見證與案例。</p></article>
         </div>
       </section>
 
       <section class="section">
         <div class="closing">
           <div>
-            <h2>這四週先達成共識</h2>
-            <p>現階段不是把所有細節一次做完，而是先把大家對問題的理解拉齊：前端行銷怎麼讓人進來，工作坊怎麼承接正課，課後營運怎麼讓學員持續產生成果，最後再把這些成果回流到下一輪招生。</p>
+            <h2>這份文件要對齊的是下一步，而不是一次做完所有事</h2>
+            <p>四週的目標，是把嵩恩老師已經有的聲音教學資產整理成第一輪可以執行的招課系統。第一輪跑通後，再依據真實數據調整前端切角、工作坊內容、正課承接與課後營運。</p>
           </div>
-          <div class="decision">
-            <span>先對齊問題，不急著做漂亮包裝</span>
-            <span>先確定漏斗，再製作前端素材</span>
-            <span>先設計營運，再放大課程成果</span>
+          <div class="decision-box">
+            <strong>下一個決策點</strong>
+            <span>先確認第 1 週萃取會議時間，並準備五項最小資料清單。</span>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      版本：260624 v2。定位：給嵩恩老師與團隊對齊用的四週課程增長工作地圖，不是公開銷售頁。
+      <span>嵩恩老師聲音課｜按表招課資料需求與執行分工</span>
     </footer>
   </div>
 
+  <button class="tweaks-trigger" id="tweaksTrigger" aria-label="設計調整面板">⚙</button>
+  <div class="tweaks-panel" id="tweaksPanel">
+    <h4>設計調整</h4>
+    <div class="tweaks-group">
+      <label for="tweakColorMode">色彩模式</label>
+      <select id="tweakColorMode">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="brand">Brand</option>
+      </select>
+    </div>
+    <div class="tweaks-group">
+      <label for="tweakFontScale">字體縮放</label>
+      <input type="range" id="tweakFontScale" min="0.85" max="1.25" step="0.05" value="1">
+    </div>
+    <div class="tweaks-group">
+      <label for="tweakSpacingScale">間距縮放</label>
+      <input type="range" id="tweakSpacingScale" min="0.8" max="1.3" step="0.1" value="1">
+    </div>
+    <button class="tweaks-copy" id="tweaksCopy" type="button">複製目前設定</button>
+  </div>
+
+  <script>
+    (function () {
+      const trigger = document.getElementById("tweaksTrigger");
+      const panel = document.getElementById("tweaksPanel");
+      const root = document.documentElement;
+      const colorMode = document.getElementById("tweakColorMode");
+      const fontScale = document.getElementById("tweakFontScale");
+      const spacingScale = document.getElementById("tweakSpacingScale");
+      const copyButton = document.getElementById("tweaksCopy");
+
+      trigger.addEventListener("click", function () {
+        panel.classList.toggle("open");
+      });
+
+      colorMode.addEventListener("change", function () {
+        root.setAttribute("data-theme", colorMode.value);
+      });
+
+      fontScale.addEventListener("input", function () {
+        root.style.setProperty("--font-scale", fontScale.value);
+      });
+
+      spacingScale.addEventListener("input", function () {
+        root.style.setProperty("--spacing-scale", spacingScale.value);
+      });
+
+      copyButton.addEventListener("click", function () {
+        const css = "/* Tweaks Panel 設定 */\n:root {\n  --font-scale: " + fontScale.value + ";\n  --spacing-scale: " + spacingScale.value + ";\n  /* data-theme: " + colorMode.value + " */\n}";
+        navigator.clipboard.writeText(css).then(function () {
+          copyButton.textContent = "已複製";
+          setTimeout(function () {
+            copyButton.textContent = "複製目前設定";
+          }, 1600);
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
